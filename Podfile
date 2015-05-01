@@ -3,10 +3,12 @@
 use_frameworks!
 
 target 'Beeshop' do
-pod 'Alamofire'
+    pod 'Alamofire'
+    pod 'SwiftyJSON'
 end
 
 target 'BeeshopTests' do
-
+    pod 'Alamofire'
+    pod 'SwiftyJSON'
 end
 

@@ -10,6 +10,15 @@ import UIKit
 
 class FirstViewController: UIViewController {
 
+    required init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        ConnectionManager.sharedInstance.pingServer({ (json) -> Void in
+            println(json["Squeed"])
+        }, errorHandler: { (error) -> Void in
+            println(error)
+        })
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

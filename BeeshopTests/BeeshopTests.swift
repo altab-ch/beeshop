@@ -8,6 +8,7 @@
 
 import UIKit
 import XCTest
+import SwiftyJSON
 
 class BeeshopTests: XCTestCase {
     
@@ -21,15 +22,44 @@ class BeeshopTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+    func testPerformanceServer() {
+        
+        self.measureBlock() {
+            let expectation = self.expectationWithDescription("ping server")
+            ConnectionManager.sharedInstance.pingServer({(json: JSON)->Void in
+                    expectation.fulfill()
+                
+                }, errorHandler: { (error: NSError?) -> Void in
+                    expectation.fulfill()
+            })
+            
+            self.waitForExpectationsWithTimeout(5) { (error) in
+                
+            }
+        }
+        
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
+    func testPingServer(){
+        
+        let expectation = expectationWithDescription("ping server")
+        
+        ConnectionManager.sharedInstance.pingServer({(json: JSON)->Void in
+            if let ping = json["Squeed"].string {
+                XCTAssertTrue(ping == "Hello world post !!", "Issue with server ping")
+            } else {
+                println(json["Squeed"].error)
+                XCTAssertTrue(false, "Issue with json decoding")
+            }
+            expectation.fulfill()
+            
+        }, errorHandler: { (error: NSError?) -> Void in
+            XCTAssertTrue(false, "Issue with server connection")
+            expectation.fulfill()
+        })
+        
+        waitForExpectationsWithTimeout(5) { (error) in
+            
         }
     }
     

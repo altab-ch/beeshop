@@ -8,15 +8,25 @@
 
 import Foundation
 import Alamofire
+import SwiftyJSON
 
 class ConnectionManager {
     
     static let sharedInstance = ConnectionManager()
     
-    init() {
+    func pingServer(completion:(json: JSON)->Void, errorHandler:(error: NSError?)->Void){
+        Alamofire.request(.POST, "http://www.altab.ch/squeed/")
+            .responseJSON { (_, _, JSONdata, error) in
+                if ((error) != nil)
+                {
+                    errorHandler(error: error)
+                }
+                else
+                {
+                    let json = JSON(JSONdata!)
+                    completion(json: json)
+                }
+            }
         
     }
-    
-    
-    
 }
