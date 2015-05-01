@@ -14,7 +14,8 @@
 		29A27F021AEAA47000D4CED9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29A27F011AEAA47000D4CED9 /* Images.xcassets */; };
 		29A27F051AEAA47000D4CED9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29A27F031AEAA47000D4CED9 /* LaunchScreen.xib */; };
 		29A27F111AEAA47000D4CED9 /* BeeshopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A27F101AEAA47000D4CED9 /* BeeshopTests.swift */; };
-		EEA04D2EA14DB4E43C43C305 /* libPods-Beeshop.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7DFBB553F216777F138ADCE /* libPods-Beeshop.a */; };
+		29DED5931AF1664B00E17104 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DED5921AF1664B00E17104 /* ConnectionManager.swift */; };
+		EDC5E163184D37262FF653D7 /* Pods_Beeshop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F0DFC748F50332A195F7C1B /* Pods_Beeshop.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F0DFC748F50332A195F7C1B /* Pods_Beeshop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beeshop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		29A27EF31AEAA47000D4CED9 /* Beeshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beeshop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29A27EF71AEAA47000D4CED9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29A27EF81AEAA47000D4CED9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,9 +41,9 @@
 		29A27F0A1AEAA47000D4CED9 /* BeeshopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeeshopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29A27F0F1AEAA47000D4CED9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29A27F101AEAA47000D4CED9 /* BeeshopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeshopTests.swift; sourceTree = "<group>"; };
+		29DED5921AF1664B00E17104 /* ConnectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
 		31FE7778DA161D48C18E974B /* Pods-Beeshop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beeshop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Beeshop/Pods-Beeshop.debug.xcconfig"; sourceTree = "<group>"; };
 		8EABE2C7FFD770A2E888B93A /* Pods-Beeshop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beeshop.release.xcconfig"; path = "Pods/Target Support Files/Pods-Beeshop/Pods-Beeshop.release.xcconfig"; sourceTree = "<group>"; };
-		D7DFBB553F216777F138ADCE /* libPods-Beeshop.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Beeshop.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEA04D2EA14DB4E43C43C305 /* libPods-Beeshop.a in Frameworks */,
+				EDC5E163184D37262FF653D7 /* Pods_Beeshop.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +88,7 @@
 		29A27EF51AEAA47000D4CED9 /* Beeshop */ = {
 			isa = PBXGroup;
 			children = (
+				29DED5911AF165BC00E17104 /* Managers */,
 				29A27EF81AEAA47000D4CED9 /* AppDelegate.swift */,
 				29A27EFA1AEAA47000D4CED9 /* FirstViewController.swift */,
 				29A27EFC1AEAA47000D4CED9 /* SecondViewController.swift */,
@@ -122,6 +125,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		29DED5911AF165BC00E17104 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				29DED5921AF1664B00E17104 /* ConnectionManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
 		C75C78BC6B5BFD451784F2BD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,7 +145,7 @@
 		F3AAA7DEA1DC6FAC1F4D1473 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D7DFBB553F216777F138ADCE /* libPods-Beeshop.a */,
+				0F0DFC748F50332A195F7C1B /* Pods_Beeshop.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -151,6 +162,7 @@
 				29A27EF01AEAA47000D4CED9 /* Frameworks */,
 				29A27EF11AEAA47000D4CED9 /* Resources */,
 				9830FBFA250CF065EF3CDB73 /* Copy Pods Resources */,
+				7E86FE56C13ADD2F1C29597E /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +264,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		7E86FE56C13ADD2F1C29597E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Beeshop/Pods-Beeshop-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9830FBFA250CF065EF3CDB73 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -275,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29A27EFD1AEAA47000D4CED9 /* SecondViewController.swift in Sources */,
+				29DED5931AF1664B00E17104 /* ConnectionManager.swift in Sources */,
 				29A27EF91AEAA47000D4CED9 /* AppDelegate.swift in Sources */,
 				29A27EFB1AEAA47000D4CED9 /* FirstViewController.swift in Sources */,
 			);
