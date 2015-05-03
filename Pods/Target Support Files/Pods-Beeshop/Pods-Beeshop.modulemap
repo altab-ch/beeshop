@@ -1,0 +1,6 @@
+framework module Pods_Beeshop {
+  umbrella header "Pods-Beeshop-umbrella.h"
+
+  export *
+  module * { export * }
+}
