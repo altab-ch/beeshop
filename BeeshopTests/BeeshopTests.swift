@@ -14,18 +14,16 @@ class BeeshopTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
     
     func testPerformanceServer() {
         
         self.measureBlock() {
-            let expectation = self.expectationWithDescription("ping server")
+            let expectation = self.expectationWithDescription("performance server")
             ConnectionManager.sharedInstance.pingServer({(json: JSON)->Void in
                     expectation.fulfill()
                 
