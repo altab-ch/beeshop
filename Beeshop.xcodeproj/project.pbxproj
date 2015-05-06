@@ -34,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		0F0DFC748F50332A195F7C1B /* Pods_Beeshop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beeshop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2979D21A1AF9AD4C00753B9F /* Beeshop-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Beeshop-Bridging-Header.h"; sourceTree = "<group>"; };
 		29A27EF31AEAA47000D4CED9 /* Beeshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beeshop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29A27EF71AEAA47000D4CED9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29A27EF81AEAA47000D4CED9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +107,7 @@
 				29A27F031AEAA47000D4CED9 /* LaunchScreen.xib */,
 				29A27EF61AEAA47000D4CED9 /* Supporting Files */,
 				29DED5CC1AF6C4AF00E17104 /* ProductModel.xcdatamodeld */,
+				2979D21A1AF9AD4C00753B9F /* Beeshop-Bridging-Header.h */,
 			);
 			path = Beeshop;
 			sourceTree = "<group>";
@@ -509,6 +511,7 @@
 				INFOPLIST_FILE = Beeshop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Beeshop/Beeshop-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -520,6 +523,7 @@
 				INFOPLIST_FILE = Beeshop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Beeshop/Beeshop-Bridging-Header.h";
 			};
 			name = Release;
 		};

@@ -29,4 +29,34 @@ class ConnectionManager {
             }
         
     }
+    
+    func downloadImages(list: [String]){
+        var ls : NSMutableArray = NSMutableArray()
+        let destination = Alamofire.Request.suggestedDownloadDestination(directory: .LibraryDirectory, domain: .UserDomainMask)
+        let localUrl = NSSearchPathForDirectoriesInDomains(.LibraryDirectory, .UserDomainMask, true)[0] as! String
+        
+        for url in list {
+            if !NSFileManager.defaultManager().fileExistsAtPath(localUrl+"/"+url.lastPathComponent){
+                ls.addObject(url)
+            }
+        }
+        
+        let tempLst = ls as NSArray as! [String]
+        
+        for url in tempLst {
+            Alamofire.download(.GET, url, destination).response({ (req, res, data, err) -> Void in
+                
+                ls.removeObject(url)
+                
+                if (ls.count == 0) {
+                    NSNotificationCenter.defaultCenter().postNotificationName("DownloadImagesDidFinish", object: nil)
+                }
+                
+            })
+            
+        }
+        
+        
+        
+    }
 }
