@@ -18,6 +18,7 @@
 		29DED5D11AF8206500E17104 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DED5D01AF8206500E17104 /* MainViewController.swift */; };
 		29DED5D31AF86CCB00E17104 /* ProductCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DED5D21AF86CCB00E17104 /* ProductCollectionViewController.swift */; };
 		29DED5D51AF8797E00E17104 /* ProductTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DED5D41AF8797E00E17104 /* ProductTableViewController.swift */; };
+		29F0AE511AFBB9AB000BC4DB /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F0AE501AFBB9AB000BC4DB /* ProductDetailViewController.swift */; };
 		C4DB70425BB86DF1DF758BD0 /* Pods_BeeshopTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C8BA2D0AEA05A4894C55852 /* Pods_BeeshopTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		EDC5E163184D37262FF653D7 /* Pods_Beeshop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F0DFC748F50332A195F7C1B /* Pods_Beeshop.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
@@ -49,6 +50,7 @@
 		29DED5D01AF8206500E17104 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		29DED5D21AF86CCB00E17104 /* ProductCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewController.swift; sourceTree = "<group>"; };
 		29DED5D41AF8797E00E17104 /* ProductTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductTableViewController.swift; sourceTree = "<group>"; };
+		29F0AE501AFBB9AB000BC4DB /* ProductDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
 		31FE7778DA161D48C18E974B /* Pods-Beeshop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beeshop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Beeshop/Pods-Beeshop.debug.xcconfig"; sourceTree = "<group>"; };
 		3E3FE221B891CA568751F737 /* Pods-BeeshopTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeeshopTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeeshopTests/Pods-BeeshopTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5A5316F2EB73D301D266B4DA /* Pods-BeeshopTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeeshopTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeeshopTests/Pods-BeeshopTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				29DED5D01AF8206500E17104 /* MainViewController.swift */,
 				29DED5D21AF86CCB00E17104 /* ProductCollectionViewController.swift */,
 				29DED5D41AF8797E00E17104 /* ProductTableViewController.swift */,
+				29F0AE501AFBB9AB000BC4DB /* ProductDetailViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 			files = (
 				29DED5931AF1664B00E17104 /* ConnectionManager.swift in Sources */,
 				29DED5D31AF86CCB00E17104 /* ProductCollectionViewController.swift in Sources */,
+				29F0AE511AFBB9AB000BC4DB /* ProductDetailViewController.swift in Sources */,
 				29DED5CE1AF6C4B000E17104 /* ProductModel.xcdatamodeld in Sources */,
 				29A27EF91AEAA47000D4CED9 /* AppDelegate.swift in Sources */,
 				29DED5D51AF8797E00E17104 /* ProductTableViewController.swift in Sources */,

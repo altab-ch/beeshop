@@ -12,9 +12,32 @@ import SwiftyJSON
 
 class MainViewController: UIViewController {
     
+    var listingNavVC : UINavigationController?
     
-    func importStructure()->JSON{
-        var json: JSON =  [["ID":"1", "Name":"Tomates", "Image":""], ["ID":"2", "Name":"Salades, concombres", "Image":""], ["ID":"1", "Name":"Tomates", "Image":""]]
-        return json
+    @IBOutlet weak var lbCategory: UILabel!
+    
+    required init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "titleDidChange:", name:"TitleDidChange", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "addProductToBasket:", name:"AddProductToBasket", object: nil)
+        
+    }
+    
+    override func viewDidLoad() {
+        listingNavVC = self.childViewControllers[0] as? UINavigationController
+        
+    }
+    
+    func titleDidChange(notification: NSNotification){
+        let str = notification.object as! String
+        lbCategory.text = str
+    }
+    
+    @IBAction func btTitlePressed(sender: AnyObject) {
+        listingNavVC?.popViewControllerAnimated(true)
+    }
+    
+    @IBAction func addProductToBasket(sender: AnyObject) {
+        
     }
 }
