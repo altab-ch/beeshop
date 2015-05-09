@@ -32,8 +32,8 @@ class ProductDetailViewController: UIViewController {
         if let str = product["Name"].string {
             name.text = str
         }
-        if let str = product["Prix"].string {
-            prix.text = "CHF "+str
+        if let str = product["Prix"].double {
+            prix.text = "CHF "+String(format:"%.2f",str)
         }
         if let str = product["Quantité"].string {
             quantite.text = str

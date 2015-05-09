@@ -44,9 +44,9 @@ class ProductCollectionView: UICollectionViewController, UICollectionViewDelegat
     
     func importStructure()->[JSON]{
         var json: [JSON] =  [["ID":"1", "Name":"Tomates", "Image":"http://www.culti-shop.ch/components/com_virtuemart/shop_image/category/Tomates_4c245ab1487cf.gif", "product": [
-            ["Name":"Tomate cherry", "PrixKilo":"7.40/ Kg", "Prix":"1.85", "Quantité":"250 grammes", "TypeCulture":"Hors-sol", "Provenance":"Vaud, Suisse", "Conditionnement":"Barquette de 250 grammes", "Image":"http://www.culti-shop.ch/components/com_virtuemart/shop_image/product/Tomate_cherry_ba_4dd17c15deae1.jpg"],
-            ["Name":"Tomate cherry grappe", "PrixKilo":"10.10/ Kg", "Prix":"5.05", "Quantité":"500 grammes", "TypeCulture":"", "Provenance":"", "Conditionnement":"", "Image":"http://www.culti-shop.ch/components/com_virtuemart/shop_image/product/Tomate_cherry_gr_4c3ebac5582fe.jpg"],
-            ["Name":"Tomate ronde", "PrixKilo":"3.70/ Kg", "Prix":"3.70", "Quantité":"1 kilo", "TypeCulture":"Hors-sol", "Provenance":"Vaud, Suisse", "Conditionnement":"", "Image":"http://www.culti-shop.ch/components/com_virtuemart/shop_image/product/Tomate_ronde_4c11eddbc1add.jpg"]
+            ["Name":"Tomate cherry", "PrixKilo":"7.40/ Kg", "Prix":1.85, "Quantité":"250 grammes", "TypeCulture":"Hors-sol", "Provenance":"Vaud, Suisse", "Conditionnement":"Barquette de 250 grammes", "Image":"http://www.culti-shop.ch/components/com_virtuemart/shop_image/product/Tomate_cherry_ba_4dd17c15deae1.jpg"],
+            ["Name":"Tomate cherry grappe", "PrixKilo":"10.10/ Kg", "Prix":5.05, "Quantité":"500 grammes", "TypeCulture":"", "Provenance":"", "Conditionnement":"", "Image":"http://www.culti-shop.ch/components/com_virtuemart/shop_image/product/Tomate_cherry_gr_4c3ebac5582fe.jpg"],
+            ["Name":"Tomate ronde", "PrixKilo":"3.70/ Kg", "Prix":3.70, "Quantité":"1 kilo", "TypeCulture":"Hors-sol", "Provenance":"Vaud, Suisse", "Conditionnement":"", "Image":"http://www.culti-shop.ch/components/com_virtuemart/shop_image/product/Tomate_ronde_4c11eddbc1add.jpg"]
             
         ]],
             ["ID":"2", "Name":"Salades, concombres", "Image":"http://www.culti-shop.ch/components/com_virtuemart/shop_image/category/Salades__concomb_4c08c7d1ca19d.gif", "product":[

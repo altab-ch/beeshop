@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2993857C1AFC260600F57721 /* Basket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2993857B1AFC260600F57721 /* Basket.swift */; };
+		2993857F1AFC39DE00F57721 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2993857E1AFC39DE00F57721 /* ProductTableViewCell.swift */; };
+		299385811AFD08CA00F57721 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299385801AFD08C900F57721 /* CartViewController.swift */; };
 		29A27EF91AEAA47000D4CED9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A27EF81AEAA47000D4CED9 /* AppDelegate.swift */; };
 		29A27F001AEAA47000D4CED9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29A27EFE1AEAA47000D4CED9 /* Main.storyboard */; };
 		29A27F021AEAA47000D4CED9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29A27F011AEAA47000D4CED9 /* Images.xcassets */; };
@@ -36,6 +39,9 @@
 /* Begin PBXFileReference section */
 		0F0DFC748F50332A195F7C1B /* Pods_Beeshop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beeshop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2979D21A1AF9AD4C00753B9F /* Beeshop-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Beeshop-Bridging-Header.h"; sourceTree = "<group>"; };
+		2993857B1AFC260600F57721 /* Basket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Basket.swift; sourceTree = "<group>"; };
+		2993857E1AFC39DE00F57721 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		299385801AFD08C900F57721 /* CartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		29A27EF31AEAA47000D4CED9 /* Beeshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beeshop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29A27EF71AEAA47000D4CED9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29A27EF81AEAA47000D4CED9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2993857D1AFC39B900F57721 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2993857E1AFC39DE00F57721 /* ProductTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		29A27EEA1AEAA47000D4CED9 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +118,7 @@
 				29A27EF81AEAA47000D4CED9 /* AppDelegate.swift */,
 				29DED5CF1AF81FE500E17104 /* Controllers */,
 				29DED5911AF165BC00E17104 /* Managers */,
+				2993857D1AFC39B900F57721 /* Views */,
 				29A27EFE1AEAA47000D4CED9 /* Main.storyboard */,
 				29A27F011AEAA47000D4CED9 /* Images.xcassets */,
 				29A27F031AEAA47000D4CED9 /* LaunchScreen.xib */,
@@ -143,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				29DED5921AF1664B00E17104 /* ConnectionManager.swift */,
+				2993857B1AFC260600F57721 /* Basket.swift */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -154,6 +170,7 @@
 				29DED5D21AF86CCB00E17104 /* ProductCollectionViewController.swift */,
 				29DED5D41AF8797E00E17104 /* ProductTableViewController.swift */,
 				29F0AE501AFBB9AB000BC4DB /* ProductDetailViewController.swift */,
+				299385801AFD08C900F57721 /* CartViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -233,6 +250,7 @@
 				TargetAttributes = {
 					29A27EF21AEAA47000D4CED9 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = T5223UFA4Z;
 					};
 					29A27F091AEAA47000D4CED9 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -378,6 +396,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				29DED5931AF1664B00E17104 /* ConnectionManager.swift in Sources */,
+				2993857C1AFC260600F57721 /* Basket.swift in Sources */,
+				299385811AFD08CA00F57721 /* CartViewController.swift in Sources */,
+				2993857F1AFC39DE00F57721 /* ProductTableViewCell.swift in Sources */,
 				29DED5D31AF86CCB00E17104 /* ProductCollectionViewController.swift in Sources */,
 				29F0AE511AFBB9AB000BC4DB /* ProductDetailViewController.swift in Sources */,
 				29DED5CE1AF6C4B000E17104 /* ProductModel.xcdatamodeld in Sources */,
@@ -512,9 +533,12 @@
 			baseConfigurationReference = 31FE7778DA161D48C18E974B /* Pods-Beeshop.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Beeshop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Beeshop/Beeshop-Bridging-Header.h";
 			};
 			name = Debug;
@@ -524,9 +548,12 @@
 			baseConfigurationReference = 8EABE2C7FFD770A2E888B93A /* Pods-Beeshop.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Beeshop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Beeshop/Beeshop-Bridging-Header.h";
 			};
 			name = Release;
