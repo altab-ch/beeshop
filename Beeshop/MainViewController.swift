@@ -22,9 +22,11 @@ class MainViewController: UIViewController {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "titleDidChange:", name:"TitleDidChange", object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "basketTotalUpdated:", name:"BasketTotalUpdated", object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "animateImageProductMain:", name:"AnimateImageProductMain", object: nil)
+        
     }
     
     override func viewDidLoad() {
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(named: "nav-back-portrait"), forBarMetrics: .Default)
         listingNavVC = self.childViewControllers[0] as? UINavigationController
         self.setTotal()
     }

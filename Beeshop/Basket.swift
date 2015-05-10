@@ -52,4 +52,17 @@ class Basket {
         
         return total
     }
+    
+    func deleteProduct(iDProduct:String){
+        if products.count > 0 {
+            for ind in 0...products.count-1{
+                if products[ind]["ID"].string == iDProduct{
+                    products.removeAtIndex(ind)
+                    break
+                }
+            }
+        }
+        
+        NSNotificationCenter.defaultCenter().postNotificationName("BasketTotalUpdated", object: nil)
+    }
 }

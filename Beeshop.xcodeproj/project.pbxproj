@@ -10,6 +10,7 @@
 		2993857C1AFC260600F57721 /* Basket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2993857B1AFC260600F57721 /* Basket.swift */; };
 		2993857F1AFC39DE00F57721 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2993857E1AFC39DE00F57721 /* ProductTableViewCell.swift */; };
 		299385811AFD08CA00F57721 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299385801AFD08C900F57721 /* CartViewController.swift */; };
+		299385831AFFB11F00F57721 /* BasketDeleteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299385821AFFB11F00F57721 /* BasketDeleteButton.swift */; };
 		29A27EF91AEAA47000D4CED9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A27EF81AEAA47000D4CED9 /* AppDelegate.swift */; };
 		29A27F001AEAA47000D4CED9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29A27EFE1AEAA47000D4CED9 /* Main.storyboard */; };
 		29A27F021AEAA47000D4CED9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29A27F011AEAA47000D4CED9 /* Images.xcassets */; };
@@ -42,6 +43,7 @@
 		2993857B1AFC260600F57721 /* Basket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Basket.swift; sourceTree = "<group>"; };
 		2993857E1AFC39DE00F57721 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		299385801AFD08C900F57721 /* CartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		299385821AFFB11F00F57721 /* BasketDeleteButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasketDeleteButton.swift; sourceTree = "<group>"; };
 		29A27EF31AEAA47000D4CED9 /* Beeshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beeshop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29A27EF71AEAA47000D4CED9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29A27EF81AEAA47000D4CED9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				2993857E1AFC39DE00F57721 /* ProductTableViewCell.swift */,
+				299385821AFFB11F00F57721 /* BasketDeleteButton.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -399,6 +402,7 @@
 				2993857C1AFC260600F57721 /* Basket.swift in Sources */,
 				299385811AFD08CA00F57721 /* CartViewController.swift in Sources */,
 				2993857F1AFC39DE00F57721 /* ProductTableViewCell.swift in Sources */,
+				299385831AFFB11F00F57721 /* BasketDeleteButton.swift in Sources */,
 				29DED5D31AF86CCB00E17104 /* ProductCollectionViewController.swift in Sources */,
 				29F0AE511AFBB9AB000BC4DB /* ProductDetailViewController.swift in Sources */,
 				29DED5CE1AF6C4B000E17104 /* ProductModel.xcdatamodeld in Sources */,
