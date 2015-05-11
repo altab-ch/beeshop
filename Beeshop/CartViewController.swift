@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class CartViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class CartViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var lbTotal: UILabel!
@@ -76,6 +76,10 @@ class CartViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         tableView.endUpdates()
         self.updateTotal()
+    }
+    
+    func textFieldDidBeginEditing(textField: UITextField) {
+        textField.selectAll(nil)
     }
     
     @IBAction func btValiderPressed(sender: AnyObject) {

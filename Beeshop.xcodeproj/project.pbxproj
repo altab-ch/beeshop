@@ -11,6 +11,9 @@
 		2993857F1AFC39DE00F57721 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2993857E1AFC39DE00F57721 /* ProductTableViewCell.swift */; };
 		299385811AFD08CA00F57721 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299385801AFD08C900F57721 /* CartViewController.swift */; };
 		299385831AFFB11F00F57721 /* BasketDeleteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299385821AFFB11F00F57721 /* BasketDeleteButton.swift */; };
+		299385871B00086800F57721 /* ENSideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299385851B00086800F57721 /* ENSideMenu.swift */; };
+		299385881B00086800F57721 /* ENSideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299385861B00086800F57721 /* ENSideMenuNavigationController.swift */; };
+		2993858A1B00090200F57721 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299385891B00090200F57721 /* MainNavigationController.swift */; };
 		29A27EF91AEAA47000D4CED9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A27EF81AEAA47000D4CED9 /* AppDelegate.swift */; };
 		29A27F001AEAA47000D4CED9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29A27EFE1AEAA47000D4CED9 /* Main.storyboard */; };
 		29A27F021AEAA47000D4CED9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29A27F011AEAA47000D4CED9 /* Images.xcassets */; };
@@ -44,6 +47,9 @@
 		2993857E1AFC39DE00F57721 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		299385801AFD08C900F57721 /* CartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		299385821AFFB11F00F57721 /* BasketDeleteButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasketDeleteButton.swift; sourceTree = "<group>"; };
+		299385851B00086800F57721 /* ENSideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenu.swift; sourceTree = "<group>"; };
+		299385861B00086800F57721 /* ENSideMenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenuNavigationController.swift; sourceTree = "<group>"; };
+		299385891B00090200F57721 /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		29A27EF31AEAA47000D4CED9 /* Beeshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beeshop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29A27EF71AEAA47000D4CED9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29A27EF81AEAA47000D4CED9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +101,15 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		299385841B00084200F57721 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				299385851B00086800F57721 /* ENSideMenu.swift */,
+				299385861B00086800F57721 /* ENSideMenuNavigationController.swift */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
 		29A27EEA1AEAA47000D4CED9 = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +137,7 @@
 				29DED5CF1AF81FE500E17104 /* Controllers */,
 				29DED5911AF165BC00E17104 /* Managers */,
 				2993857D1AFC39B900F57721 /* Views */,
+				299385841B00084200F57721 /* Tools */,
 				29A27EFE1AEAA47000D4CED9 /* Main.storyboard */,
 				29A27F011AEAA47000D4CED9 /* Images.xcassets */,
 				29A27F031AEAA47000D4CED9 /* LaunchScreen.xib */,
@@ -169,6 +185,7 @@
 		29DED5CF1AF81FE500E17104 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				299385891B00090200F57721 /* MainNavigationController.swift */,
 				29DED5D01AF8206500E17104 /* MainViewController.swift */,
 				29DED5D21AF86CCB00E17104 /* ProductCollectionViewController.swift */,
 				29DED5D41AF8797E00E17104 /* ProductTableViewController.swift */,
@@ -398,14 +415,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				299385871B00086800F57721 /* ENSideMenu.swift in Sources */,
 				29DED5931AF1664B00E17104 /* ConnectionManager.swift in Sources */,
 				2993857C1AFC260600F57721 /* Basket.swift in Sources */,
 				299385811AFD08CA00F57721 /* CartViewController.swift in Sources */,
+				2993858A1B00090200F57721 /* MainNavigationController.swift in Sources */,
 				2993857F1AFC39DE00F57721 /* ProductTableViewCell.swift in Sources */,
 				299385831AFFB11F00F57721 /* BasketDeleteButton.swift in Sources */,
 				29DED5D31AF86CCB00E17104 /* ProductCollectionViewController.swift in Sources */,
 				29F0AE511AFBB9AB000BC4DB /* ProductDetailViewController.swift in Sources */,
 				29DED5CE1AF6C4B000E17104 /* ProductModel.xcdatamodeld in Sources */,
+				299385881B00086800F57721 /* ENSideMenuNavigationController.swift in Sources */,
 				29A27EF91AEAA47000D4CED9 /* AppDelegate.swift in Sources */,
 				29DED5D51AF8797E00E17104 /* ProductTableViewController.swift in Sources */,
 				29DED5D11AF8206500E17104 /* MainViewController.swift in Sources */,

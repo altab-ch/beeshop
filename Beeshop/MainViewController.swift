@@ -16,6 +16,8 @@ class MainViewController: UIViewController {
     
     @IBOutlet weak var lbTotal: UILabel!
     @IBOutlet weak var lbCategory: UILabel!
+    @IBOutlet weak var imBack: UIImageView!
+    @IBOutlet weak var csWidthBack: NSLayoutConstraint!
     
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -34,6 +36,10 @@ class MainViewController: UIViewController {
     func titleDidChange(notification: NSNotification){
         let str = notification.object as! String
         lbCategory.text = str
+        
+//        if str == "Fruits et légumes" { imBack.hidden = true }else{ imBack.hidden = false}
+        if str == "Fruits et légumes" { csWidthBack.constant = 4 }else{ csWidthBack.constant = 28}
+        
     }
     
     func basketTotalUpdated(notification: NSNotification){
@@ -60,6 +66,10 @@ class MainViewController: UIViewController {
     
     @IBAction func btTitlePressed(sender: AnyObject) {
         listingNavVC?.popViewControllerAnimated(true)
+    }
+    
+    @IBAction func btSettingsPressed(sender: AnyObject) {
+        toggleSideMenuView()
     }
     
 }

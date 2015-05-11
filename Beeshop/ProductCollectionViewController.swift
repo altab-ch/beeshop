@@ -39,7 +39,7 @@ class ProductCollectionView: UICollectionViewController, UICollectionViewDelegat
     }
     
     override func viewDidAppear(animated: Bool) {
-        NSNotificationCenter.defaultCenter().postNotificationName("TitleDidChange", object: "Category")
+        NSNotificationCenter.defaultCenter().postNotificationName("TitleDidChange", object: "Fruits et légumes")
     }
     
     func importStructure()->[JSON]{
