@@ -1,2 +1,2 @@
 # beeshop
-Beeshop app in progress
+Example application for company cultishop.ch
